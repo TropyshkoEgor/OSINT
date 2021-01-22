@@ -107,23 +107,5 @@ class Graph():
 				self.recursion_start()
 		except: print("[ERROR] next/zero target")
 
-class Test():
-	def __init__(self):
-		self.target = 'fuckthismylife'
-
-	def info(self):
-		info = Instagram.collect_info(self.target)
-		if info['is_private']:
-			print('private')
-		else:
-			print('Not private')
-
-	def following(self):
-		following = Instagram.collect_following(self.target)
-		print(following)
-
-	def followers(self):
-		followers = Instagram.collect_followers(self.target)
-		print(followers)
 
 Graph()
